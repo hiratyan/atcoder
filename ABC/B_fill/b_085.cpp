@@ -10,6 +10,24 @@ using Graph = vector<vector<int>>;
 using mint = modint1000000007;
 
 int main(){
+    int n, a, ans = 0;
+    cin >> n;
+    set<int> set;
+    for(int i = 0; i < n; i++){
+        cin >> a;
+        set.insert(a);
+    }
+    for(int i = 1; i < 101; i++){
+        if(set.count(i)){
+            ans++;
+        }
+    }
+    cout << ans << endl;
+    return 0;
+}
+
+/*
+int main(){
     int n, c = 1;
     cin >> n;
     vector<int> vec(n);
@@ -22,7 +40,7 @@ int main(){
     }
     cout << c << endl;
 }
-
+*/
 
 /*
 int main() {
