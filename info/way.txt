@@ -2,3 +2,7 @@
 2. 過去問精選 10 問 https://qiita.com/drken/items/fd4e5e3630d0f5859067
 3. レッドコーダーが教える初級編 https://qiita.com/e869120/items/f1c6f98364d1443148b3
 4. 競プロ典型 90 問 https://atcoder.jp/contests/typical90
+
+2022/8/20
+29,582 ↑茶色
+100,399 全体
