@@ -1,0 +1,21 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "C/C++ Runner: Debug Session",
+        "type": "cppdbg",
+        "request": "launch",
+        "args": [],
+        "stopAtEntry": false,
+        "log": true,
+        "cwd": "${fileDirname}",
+        "environment": [],
+        "program": "${workspaceFolder}/problem.exe",
+        "internalConsoleOptions": "openOnSessionStart",
+        "MIMode": "gdb",
+        "preLaunchTask": "うんち",
+        "miDebuggerPath": "/usr/bin/gdb",
+        "externalConsole": false
+      }
+    ]
+  }
