@@ -10,14 +10,8 @@ using Graph = vector<vector<int>>;
 using mint = modint1000000007;
 
 int main() {
-    int i, j;
-    cin >> i >> j;
-    int k = i  + j;
-    for(int l = 0; l < 100; l++){
-        cout << k << endl;
-        k = min(k, i);
-    }
-    
+    vector<int> vec(1000000, 0);
+    vec = {1, 2, 3, 4, 5};
 
     return 0;
 }

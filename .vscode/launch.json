@@ -15,7 +15,13 @@
         "MIMode": "gdb",
         "preLaunchTask": "うんち",
         "miDebuggerPath": "/usr/bin/gdb",
-        "externalConsole": false
+        "externalConsole": false,
+        "setupCommands" : [
+
+          { "text": "-enable-pretty-printing", "description": "enable pretty printing", "ignoreFailures": true },
+
+          { "text": "handle SIGPIPE nostop noprint pass", "description": "ignore SIGPIPE", "ignoreFailures": true }  
+        ]
       }
     ]
   }
