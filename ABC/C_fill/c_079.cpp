@@ -32,9 +32,9 @@ int main() {
         }
     }
 
-    for(int i = 0; i < S.size(); i++){
+    for(int i = 0; i < int(S.size()); i++){
         cout << S.at(i);
-        if(i < S.size() - 1){
+        if(i < int(S.size()) - 1){
             if(bitans.test(2 - i)){
                 cout << '+';
             } else {
@@ -42,6 +42,8 @@ int main() {
             }
         }
     }
+
+    cout << "=7" << endl;
 
     return 0;
 }
