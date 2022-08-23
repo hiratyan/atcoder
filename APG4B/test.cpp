@@ -10,8 +10,34 @@ using Graph = vector<vector<int>>;
 using mint = modint1000000007;
 
 int main() {
-    vector<int> vec(1000000, 0);
-    vec = {1, 2, 3, 4, 5};
+    int N, K;
+    cin >> N >> K;
+    vector<int> vec(N);
+    for(int i = 0; i < N; i++){
+        cin >> vec.at(i);
+    }
 
+    bool ans = false;
+
+    for(int tmp = 0; tmp < (1 << 20); tmp++){
+        bitset<20> bit(tmp);
+
+        int sum = 0;
+        for(int j = 0; j < N; j++){
+            if(bit.test(j)){
+                sum += vec.at(j);
+            }
+        }
+
+        if(sum == K){
+            ans = true;
+        }
+    }
+
+    if (ans) {
+        cout << "YES" << endl;
+    } else {
+        cout << "NO" << endl;
+    }
     return 0;
 }
