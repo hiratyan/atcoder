@@ -9,7 +9,7 @@ using P = pair<int,int>;
 using Graph = vector<vector<int>>;
 using mint = modint1000000007;
 
-int main() {
+/*int main() {
     int N, K;
     cin >> N >> K;
     vector<int> vec(N);
@@ -40,4 +40,4 @@ int main() {
         cout << "NO" << endl;
     }
     return 0;
-}
+}*/
