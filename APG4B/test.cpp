@@ -41,3 +41,12 @@ using mint = modint1000000007;
     }
     return 0;
 }*/
+/*
+int main(){
+    int i = 7;
+    int j = 9;
+    int ans = 12;
+    chmod(ans, i);
+
+}
+*/
