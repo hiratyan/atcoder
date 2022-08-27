@@ -9,6 +9,29 @@ using P = pair<int,int>;
 using Graph = vector<vector<int>>;
 using mint = modint1000000007;
 
+int main(){
+    int n, cnt = 0,ans = 1, keep = 0;
+    cin >> n;
+    for(int i = 1; i <= n; i++){
+        cnt = 0;
+        int j = i;
+        while(j % 2 == 0){
+            cnt++;
+            j /= 2;
+        }
+        if(keep < cnt){
+            keep = cnt;
+            ans = i;
+        }
+    }
+    cout << ans << endl;
+    return 0;
+}
+
+
+
+
+
 /* 
 int main() {
     int n, k, c, ans = 0;
@@ -64,6 +87,7 @@ int main(){
     return 0; 
 }*/
 
+/*
 int main() {
     int N
     cin >> N;
@@ -77,3 +101,4 @@ int main() {
  
     cout << ans << endl;
 }
+*/
