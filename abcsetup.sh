@@ -10,20 +10,20 @@ if ! [[ "$1" =~ ^[1-9][0-9]{,2}$ ]]; then
   exit 1
 fi
 
-if [ ! -e ABC ]; then
+if [ ! -e 1ABC ]; then
   echo "Error: directory 'ABC' not exists." 1>&2
   exit 1
 fi
 
-mkdir -p ABC/$1
+mkdir -p 1ABC/$1
 
-cp -n template.cpp ABC/$1/a.cpp
-cp -n template.cpp ABC/$1/b.cpp
-cp -n template.cpp ABC/$1/c.cpp
-cp -n template.cpp ABC/$1/d.cpp
-cp -n template.cpp ABC/$1/e.cpp
-cp -n template.cpp ABC/$1/f.cpp
-cp -n template.cpp ABC/$1/g.cpp
-cp -n template.cpp ABC/$1/h.cpp
+cp -n template.cpp 1ABC/$1/a.cpp
+cp -n template.cpp 1ABC/$1/b.cpp
+cp -n template.cpp 1ABC/$1/c.cpp
+cp -n template.cpp 1ABC/$1/d.cpp
+cp -n template.cpp 1ABC/$1/e.cpp
+cp -n template.cpp 1ABC/$1/f.cpp
+cp -n template.cpp 1ABC/$1/g.cpp
+cp -n template.cpp 1ABC/$1/h.cpp
 
 exit 0
