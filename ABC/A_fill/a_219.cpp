@@ -12,8 +12,19 @@ const ll INF = 1LL << 60; //無限大
 const ll MOD = 1000000007; //10^9 + 7
 
 int main() {
-	int n;
-	cin >> n;
+    int n;
+    cin >> n;
+    if(n < 40){
+        cout << 40 - n << endl;
+        return 0;
+    } else if(n < 70){
+        cout << 70 - n << endl;
+        return 0;
+    } else if(n < 90){
+        cout << 90 - n << endl;
+        return 0;
+    }
+    cout << "expert" << endl;
 
-	return 0;
+    return 0;
 }

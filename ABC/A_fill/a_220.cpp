@@ -12,8 +12,17 @@ const ll INF = 1LL << 60; //無限大
 const ll MOD = 1000000007; //10^9 + 7
 
 int main() {
-	int n;
-	cin >> n;
+    int a, b, c, ans;
+    cin >> a >> b >> c;
+    ans = -1;
+    for(int i = a; i <= b; i++){
+        if(i % c == 0){
+            ans = i;
+            break;
+        }
+    }
 
-	return 0;
+    cout << ans << endl;
+
+    return 0;
 }

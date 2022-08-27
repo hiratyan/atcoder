@@ -11,9 +11,21 @@ using mint = modint1000000007;
 const ll INF = 1LL << 60; //無限大
 const ll MOD = 1000000007; //10^9 + 7
 
-int main() {
-	int n;
-	cin >> n;
+ll hex_conv(ll k, ll x){
+    ll ans = 0;
+    ll count = 1;
+    while(x > 0){
+        ans += x % 10 * count;
+        x /= 10;
+        count *= k;
+    }
+    return ans;
+}
 
-	return 0;
+int main() {
+    ll k, a, b;
+    cin >> k >> a >> b;
+    cout << hex_conv(k, a) * hex_conv(k, b) << endl;
+
+    return 0;
 }

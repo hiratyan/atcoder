@@ -12,8 +12,11 @@ const ll INF = 1LL << 60; //無限大
 const ll MOD = 1000000007; //10^9 + 7
 
 int main() {
-	int n;
-	cin >> n;
+    vector<int> vec(26);
+    rep(i, 0, 26) cin >> vec.at(i);
+    for(int i = 0; i < 26; i++){
+        cout << char(vec.at(i) + 'a' - 1);
+    }
 
-	return 0;
+    return 0;
 }
