@@ -11,6 +11,15 @@ using mint = modint1000000007;
 const ll INF = 1LL << 60; //無限大
 const ll MOD = 1000000007; //10^9 + 7
 
+//二進数変換するアルゴリズム
+void Binary(int x) {
+    int bit[30];
+    for (int i = 0; i < 30; i++) {
+        int Div = (1 << i);
+        bit[i] = (x / Div) % 2;
+    }
+}
+
 //引数の桁数を返す．
 int num_digits(int x){
     int c = 0;
