@@ -1,4 +1,5 @@
 #!/bin/bash
+#/arcsetup.sh 219
 
 if [ $# -ne 1 ]; then
   echo "Usage: $0 2xx" 1>&2
@@ -10,12 +11,12 @@ if ! [[ "$1" =~ ^[1-9][0-9]{,2}$ ]]; then
   exit 1
 fi
 
-if [ ! -e ARC ]; then
-  echo "Error: directory 'ARC' not exists." 1>&2
+if [ ! -e 2ARC ]; then
+  echo "Error: directory '2ARC' not exists." 1>&2
   exit 1
 fi
 
-mkdir -p ARC/$1
+mkdir -p 2ARC/$1
 
 cp -n template.cpp 2ARC/$1/a.cpp
 cp -n template.cpp 2ARC/$1/b.cpp
