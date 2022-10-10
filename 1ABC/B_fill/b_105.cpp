@@ -9,7 +9,7 @@ using P = pair<int,int>;
 using Graph = vector<vector<int>>;
 using mint = modint1000000007;
 
-/*
+
 int main(){
     int n;
     cin >> n;
@@ -25,7 +25,7 @@ int main(){
     cout << "No" << endl;
     return 0;
 }
-*/
+
 
 /*
 int main() {
@@ -45,21 +45,3 @@ int main() {
     return 0;
 }
 */
-
-int main(){
-    int n, cnt, ans = 0;
-    cin >> n;
-    for(int i = 1; i <= n; i+=2){
-        cnt = 0;
-        for(int j = 1; j <= i; j++){
-            if(i % j == 0){
-                cnt++;
-            }
-        }
-        if(cnt == 8){
-            ans++;
-        }
-    }
-    cout << ans << endl;
-    return 0;
-}
