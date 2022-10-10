@@ -8,7 +8,7 @@ using ll = long long;
 using P = pair<int,int>;
 using Graph = vector<vector<int>>;
 using mint = modint1000000007;
-
+/*
 int main() {
     int n, k, m, keep, cnt = 0, ans;
     cin >> n >> k >> m;
@@ -27,4 +27,24 @@ int main() {
         cout << ans << endl;
         return 0;
     }
+}
+*/
+
+int main(){
+    float n, k, m, keep, sum = 0, ans = -1;
+    cin >> n >> k >> m;
+    for(int i = 0; i < n - 1; i++){
+        cin >> keep;
+        sum += keep;
+    }
+    for(int i = 0; i <= k; i++){
+        keep = (sum + i) / n;
+        if(keep >= m){
+            ans = i;
+            break;
+        }
+    }
+    cout << ans << endl;
+
+    return 0;
 }

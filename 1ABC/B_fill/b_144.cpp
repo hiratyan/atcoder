@@ -8,7 +8,7 @@ using ll = long long;
 using P = pair<int,int>;
 using Graph = vector<vector<int>>;
 using mint = modint1000000007;
-
+/*
 int main(){
     int n;
     cin >> n;
@@ -25,20 +25,7 @@ int main(){
     cout << "No" << endl;
     return 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+*/
 
 /*
 int main() {
@@ -59,3 +46,18 @@ int main() {
     return 0;
 }
 */
+
+int main(){
+    int n;
+    string ans = "No";
+    cin >> n;
+    for(int i = 1; i <= 9; i++){
+        for(int j = 1; j <= 9; j++){
+            if(i*j == n){
+                ans = "Yes";
+            }
+        }
+    }
+    cout << ans << endl;
+    return 0;
+}
