@@ -8,6 +8,8 @@ using ll = long long;
 using P = pair<int,int>;
 using Graph = vector<vector<int>>;
 using mint = modint1000000007;
+
+/*
 int num_digits(int x){
     int c = 0;
     while(x > 0){
@@ -36,13 +38,7 @@ int main(){
     cout << ans << endl;
     return 0;
 }
-
-
-
-
-
-
-
+*/
 /*
 int main() {
     int n, ans = 0;
@@ -59,3 +55,19 @@ int main() {
     return 0;
 }
 */
+
+int main(){
+    int n, cnt = 0;
+    cin >> n;
+    for(int i = 1; i <= n; i++){
+        if(1 <= i && i <= 9){
+            cnt++;
+        } else if(100 <= i && i <= 999){
+            cnt++;
+        } else if(10000 <= i && i <= 99999){
+            cnt++;
+        }
+    }
+    cout << cnt << endl;
+    return 0;
+}

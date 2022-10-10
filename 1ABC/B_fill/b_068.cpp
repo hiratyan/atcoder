@@ -8,7 +8,7 @@ using ll = long long;
 using P = pair<int,int>;
 using Graph = vector<vector<int>>;
 using mint = modint1000000007;
-
+/*
 int main(){
     int n, cnt = 0,ans = 1, keep = 0;
     cin >> n;
@@ -27,8 +27,7 @@ int main(){
     cout << ans << endl;
     return 0;
 }
-
-
+*/
 
 
 
@@ -102,3 +101,26 @@ int main() {
     cout << ans << endl;
 }
 */
+
+int main(){
+    int n, ans = 0;
+    cin >> n;
+    if(n < 2){
+        ans = 1;
+    } else if(n < 4){
+        ans = 2;
+    } else if(n < 8){
+        ans = 4;
+    } else if(n < 16){
+        ans = 8;
+    } else if(n < 32){
+        ans = 16;
+    } else if(n < 64){
+        ans = 32;
+    } else if(n < 128){
+        ans = 64;
+    }
+
+    cout << ans << endl;
+    return 0;
+}

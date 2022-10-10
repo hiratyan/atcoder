@@ -8,7 +8,7 @@ using ll = long long;
 using P = pair<int,int>;
 using Graph = vector<vector<int>>;
 using mint = modint1000000007;
-
+/*
 int main(){
     int n, d, ans = 0, keep = 0;
     cin >> n >> d;
@@ -36,6 +36,7 @@ int main(){
 
     return 0;
 }
+*/
 
 /*
 int main() {
@@ -71,3 +72,34 @@ int main() {
     return 0;
 }
 */
+
+bool is_integer( double x ){
+  return std::floor(x)==x;
+}
+
+int main(){
+    double n, d, keep, ans = 0;
+    cin >> n >> d;
+    vector<vector<int>> vec(n, vector<int>(d, 0));
+    for(int i = 0; i < n; i++){
+        for(int j = 0; j < d; j++){
+            cin >> vec.at(i).at(j);
+        }
+    }
+    for(int i = 0; i < n; i++){
+        for(int j = i + 1; j < n; j++){
+            keep = 0;
+            for(int k = 0; k < d; k++){
+                keep += (vec.at(i).at(k) - vec.at(j).at(k)) * (vec.at(i).at(k) - vec.at(j).at(k));
+            }
+            keep = sqrt(keep);
+            if(is_integer(keep)){
+                ans++;
+            }
+        }
+    }
+
+    cout << ans << endl;
+
+    return 0;
+}
