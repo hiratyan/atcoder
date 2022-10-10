@@ -8,7 +8,7 @@ using ll = long long;
 using P = pair<int,int>;
 using Graph = vector<vector<int>>;
 using mint = modint1000000007;
-
+/*
 int main() {
     int a, b;
     cin >> a >> b;
@@ -24,5 +24,21 @@ int main() {
         return 0;
     }
 
+    return 0;
+}
+*/
+
+int main(){
+    int a, b;
+    cin >> a >> b;
+    if(a > b){
+        for(int i = 0; i < a; i++){
+            cout << b;
+        }
+    } else {
+        for(int i = 0; i < b; i++){
+            cout << a;
+        }        
+    }
     return 0;
 }

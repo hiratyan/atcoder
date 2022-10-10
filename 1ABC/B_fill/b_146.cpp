@@ -8,7 +8,7 @@ using ll = long long;
 using P = pair<int,int>;
 using Graph = vector<vector<int>>;
 using mint = modint1000000007;
-
+/*
 int main() {
     int n;
     string s;
@@ -21,5 +21,20 @@ int main() {
     }
     cout << s << endl;
 
+    return 0;
+}
+*/
+
+int main(){
+    int n;
+    string s;
+    cin >> n >> s;
+    for(int i = 0; i < (int)s.size(); i++){
+        s.at(i) = s.at(i) + n;
+        if(s.at(i) > 90){
+            s.at(i) -= 26;
+        }
+    }
+    cout << s << endl;
     return 0;
 }

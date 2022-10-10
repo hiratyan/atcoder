@@ -8,7 +8,7 @@ using ll = long long;
 using P = pair<int,int>;
 using Graph = vector<vector<int>>;
 using mint = modint1000000007;
-
+/*
 int main() {
     int n;
     string s, t;
@@ -23,5 +23,16 @@ int main() {
     rep(i, 0, n*2) cout << vec.at(i);
 
 
+    return 0;
+}
+*/
+
+int main(){
+    int n;
+    string s, t;
+    cin >> n >> s >> t;
+    for(int i = 0; i < n; i++){
+        cout << s.at(i) << t.at(i);
+    }
     return 0;
 }

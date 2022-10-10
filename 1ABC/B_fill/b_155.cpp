@@ -8,7 +8,7 @@ using ll = long long;
 using P = pair<int,int>;
 using Graph = vector<vector<int>>;
 using mint = modint1000000007;
-
+/*
 int main() {
     int n;
     cin >> n;
@@ -27,5 +27,22 @@ int main() {
 
     cout << "APPROVED" << endl;
 
+    return 0;
+}
+*/
+
+int main(){
+    int n, a;
+    string s = "APPROVED";
+    cin >> n;
+    for(int i = 0; i < n; i++){
+        cin >> a;
+        if(a % 2 == 0){
+            if(!(a % 3 == 0 || a % 5 == 0 )){
+                s = "DENIED";
+            }            
+        }
+    }
+    cout << s << endl;
     return 0;
 }
