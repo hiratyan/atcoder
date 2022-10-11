@@ -11,11 +11,26 @@ using mint = modint1000000007;
 const ll INF = 1LL << 60; //無限大
 const ll MOD = 1000000007; //10^9 + 7
 
+/*
 int main() {
     int n;
     cin >> n;
     for(int i = 1; i <= n; i++){
         if(i * 108 / 100 == n){
+            cout << i << endl;
+            return 0;
+        }
+    }
+    cout << ":(" << endl;
+    return 0;
+}
+*/
+
+int main(){
+    int n;
+    cin >> n;
+    for(int i = 1; i <= n; i++){
+        if(floor(i * 1.08) == n){
             cout << i << endl;
             return 0;
         }

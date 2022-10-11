@@ -11,6 +11,7 @@ using mint = modint1000000007;
 const ll INF = 1LL << 60; //無限大
 const ll MOD = 1000000007; //10^9 + 7
 
+/*
 int main() {
     int red, green, blue, k, red_keep, green_keep, blue_keep;
     cin >> red >> green >> blue >> k;
@@ -30,5 +31,33 @@ int main() {
         }
     }
     cout << "No" << endl;
+    return 0;
+}
+*/
+
+int main(){
+    int a, b, c, k, bb, cc;
+    string ans = "No";
+    cin >> a >> b >> c >> k;
+    bb = b;
+    cc = c;
+    for(int i = 0; i <= k; i++){
+        for(int j = 0; j <= k - i; j++){
+            b *= 2 * i;
+            if(i == 0){
+                b = bb;
+            }
+            c *= 2 * j;
+            if(j == 0){
+                c = cc;
+            }
+            if(a < b && b < c){
+                ans = "Yes";
+            }
+            b = bb;
+            c = cc;
+        }
+    }
+    cout << ans << endl;
     return 0;
 }
